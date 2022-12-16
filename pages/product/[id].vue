@@ -29,7 +29,6 @@ const fetchProduct = async () => {
 
 // #region add to cart
 const addToCart = () => {
-  console.log("ini");
   store.dispatch("addToCart", { ...product.value, amount: amount.value });
 };
 // #endregion
