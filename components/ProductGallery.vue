@@ -9,7 +9,6 @@ const props = defineProps<{
 const imgGallery = ref<HTMLElement>();
 const activeImage = ref<string>();
 const onArrowClick = (direction: string) => {
-  console.log(direction);
   if (direction === "right")
     imgGallery.value?.scroll({ left: 111, behavior: "smooth" });
   else imgGallery.value?.scroll({ left: -111, behavior: "smooth" });

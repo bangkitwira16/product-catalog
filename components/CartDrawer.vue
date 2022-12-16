@@ -14,7 +14,6 @@ defineEmits(["on-close"]);
 const store = useStore();
 
 const cart = computed(() => {
-  console.log(store.state.cart);
   return store.state.cart;
 });
 

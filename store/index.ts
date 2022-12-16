@@ -32,7 +32,6 @@ export const store = createStore<State>({
         const productIdx = state.cart.findIndex((product: Product) => product.id === item.id)
         state.cart[productIdx]["amount"] =  state.cart[productIdx]["amount"] + item.amount
       }
-      console.log(state.cart)
     },
     REMOVE_PRODUCT_FROM_CART(state, productId) {
         const findIdx = state.cart.findIndex((product: Product) => product.id === productId)
